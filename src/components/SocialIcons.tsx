@@ -13,7 +13,7 @@ const SocialIcons = () => {
         <FaGithub size={25} />
       </a>
       <a
-        href='https://linkedin.com/in/mohitverma-2005'
+        href='https://www.linkedin.com/in/mohit-verma2005/'
         target='_blank'
         rel='noopener noreferrer'
         className='bg-gray-950   hover:scale-125 text-white p-4 rounded-full hover:bg-blue-600 transition duration-300'

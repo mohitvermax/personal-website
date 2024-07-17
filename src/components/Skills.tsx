@@ -6,7 +6,7 @@ import { RiNextjsFill } from "react-icons/ri";
 
 const SkillsSection = () => {
   return (
-  <div className='flex flex-col items-center mt-16'>
+  <div className='flex flex-col items-center mt-10'>
     <h1 className='text-3xl underline  font-bold'>My Skills</h1>
     <div className=' max-w-screen-lg mx-auto flex flex-wrap justify-center gap-5 sm:space-x-6 mt-8'>
       <SkillIcon Icon={FaHtml5} />
