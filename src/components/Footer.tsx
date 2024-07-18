@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='p-4 mt-8 w-full text-white flex justify-between items-center'>
+    <footer className='p-4 mt-8 w-full flex justify-between items-center'>
       <div className='flex space-x-4'>
         <a
           href='https://x.com/mohitvermaxx'
