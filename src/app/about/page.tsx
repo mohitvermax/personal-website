@@ -8,7 +8,7 @@ import profilePic from '../../../public/profilepic.jpeg'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 
-const page = () => {
+const About = () => {
   useGSAP(()=>{
     gsap.from('.heading', {y:20, opacity: 0, duration: 0.5, delay: 1})
     gsap.from('.avatar', {scale:0, opacity: 0, duration: 0.5, delay: 1.5})
@@ -63,4 +63,4 @@ const page = () => {
   )
 }
 
-export default page
+export default About
