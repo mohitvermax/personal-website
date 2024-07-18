@@ -1,7 +1,9 @@
 import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import SocialIcons from '@/components/SocialIcons'
+import Image from 'next/image';
 import React from 'react'
+import profilePic from '../../../public/profilepic.jpeg'
 export const metadata = {
     title: "emvee.",
     description: "Mohit Verma's personal website",
@@ -16,8 +18,8 @@ const page = () => {
         <div>
             <h1 className='text-2xl underline  font-bold mb-4'>About Me</h1>
         </div>
-        <div>
-          <img src="profilepic.png" className='rounded-full h-40 w-40 m-4 hover:scale-105 transition duration-300' alt="" />
+        <div className=''>
+          <Image src={profilePic} width={200} height={200} className='rounded-full m-4 hover:scale-105 transition duration-300' alt="" />
         </div>
         <div>
             <h1 className='text-3xl mb-4'>I am Mohit Verma, Sophomore at IITR.</h1>
@@ -38,10 +40,10 @@ const page = () => {
                 >mohitvermax</a>/README.md
             </p>
             <ul className='flex flex-col gap-2 p-2 text-sm'>
-                <li>👋 Hi, I’m @mohitvermax</li>
-                <li>👀 I’m interested in Web Development, ML/DL.</li>
-                <li>🌱 I’m currently learning Nextjs.</li>
-                <li>💞️ I’m looking to collaborate on projects involving real-world problems and new technologies.</li>
+                <li>👋 Hi, I&apos;m @mohitvermax</li>
+                <li>👀 I&apos;m interested in Web Development, ML/DL.</li>
+                <li>🌱 I&apos;m currently learning Nextjs.</li>
+                <li>💞️ I&apos;m looking to collaborate on projects involving real-world problems and new technologies.</li>
                 <li>📫 How to reach me : Email me at <a href='mailto:mohit_v@ch.iitr.ac.in' className=' hover:underline'>mohit_v@ch.iitr.ac.in</a></li>
             </ul>
         </div>

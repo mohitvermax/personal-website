@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
@@ -27,7 +28,7 @@ const Projects = () => {
     <div className='max-w-screen-lg mx-auto flex flex-wrap justify-center gap-12 sm:space-x-6 mt-6 '>
       {projectsData.slice(0, visibleProjects).map(project => (
         <div key={project.id} className='max-w-xs rounded overflow-hidden shadow-lg my-4 hover:scale-105 transition duration-300'>
-          <img className='w-full' src={project.image} alt={project.title} />
+          <Image width={0} height={0} style={{ width: '100%', height: 'auto' }}   sizes="100vw" className='w-full' src={project.image} alt={project.title} />
           <div className='px-6 py-4 flex flex-col'>
             <div className='font-bold text-xl mb-2 flex items-center justify-between'>
                 {project.title}
