@@ -1,11 +1,13 @@
+'use client'
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
-import React from 'react';
+import React, { useRef } from 'react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const SocialIcons = () => {
+  const links = useRef(null);
   useGSAP(()=>{
-    gsap.from('.links', {
+    gsap.from(links.current, {
       y: 20,
       opacity: 0,
       duration: 0.5,
@@ -14,7 +16,7 @@ const SocialIcons = () => {
     });
   })
   return (
-    <div className='links flex space-x-4 mt-10'>
+    <div className='links flex space-x-4 mt-10' ref={links}>
       <a
         href='https://github.com/mohitvermax'
         target='_blank'
