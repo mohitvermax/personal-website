@@ -2,8 +2,13 @@
 import React, { useState } from 'react';
 import { FiMenu } from 'react-icons/fi'; 
 import Link from 'next/link'; 
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 
 const Navbar = () => {
+  useGSAP(()=>{
+    gsap.from('.navbar', {y:20, opacity: 0, duration: 0.5, delay: 0})
+  })
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -11,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='flex relative w-full items-center justify-between pb-8 border-b border-gray-500'>
+    <div className='navbar flex relative w-full items-center justify-between pb-8 border-b border-gray-500'>
       <Link href={"/"} className='text-3xl font-bold'>emvee.</Link>
 
       <div className='block md:hidden'>
