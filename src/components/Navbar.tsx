@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className='flex relative w-full items-center justify-between pb-8 border-b border-gray-500'>
-      <h1 className='text-3xl font-bold'>emvee.</h1>
+      <Link href={"/"} className='text-3xl font-bold'>emvee.</Link>
 
       <div className='block md:hidden'>
         <button onClick={toggleNavbar} className='text-gray-600 focus:outline-none'>
