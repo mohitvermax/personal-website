@@ -21,7 +21,7 @@ const SocialIcons = () => {
         href='https://github.com/mohitvermax'
         target='_blank'
         rel='noopener noreferrer'
-        className=' bg-gray-950  hover:scale-125 text-white p-4 rounded-full hover:bg-gray-700 transition duration-300'
+        className=' bg-gray-950  hover:scale-125 text-white p-3 md:p-4 rounded-full hover:bg-gray-700 transition duration-300'
       >
         <FaGithub size={25} />
       </a>
@@ -29,7 +29,7 @@ const SocialIcons = () => {
         href='https://www.linkedin.com/in/mohit-verma2005/'
         target='_blank'
         rel='noopener noreferrer'
-        className=' bg-gray-950   hover:scale-125 text-white p-4 rounded-full hover:bg-blue-600 transition duration-300'
+        className=' bg-gray-950   hover:scale-125 text-white p-3 md:p-4 rounded-full hover:bg-blue-600 transition duration-300'
       >
         <FaLinkedin size={25} />
       </a>
@@ -37,7 +37,7 @@ const SocialIcons = () => {
         href='https://x.com/mohitvermaxx'
         target='_blank'
         rel='noopener noreferrer'
-        className=' bg-gray-950   hover:scale-125 text-white p-4 rounded-full hover:bg-blue-400 transition duration-300'
+        className=' bg-gray-950   hover:scale-125 text-white p-3 md:p-4 rounded-full hover:bg-blue-400 transition duration-300'
       >
         <FaTwitter size={25} />
       </a>

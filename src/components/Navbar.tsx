@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='navbar flex relative w-full items-center justify-between pb-8 border-b border-gray-500'>
+    <div className='navbar flex relative z-20 w-full items-center justify-between pb-8 border-b border-gray-500'>
       <Link href={"/"} className='text-3xl font-bold'>emvee.</Link>
 
       <div className='block md:hidden'>
@@ -25,9 +25,9 @@ const Navbar = () => {
         </button>
       </div>
 
-      <ul className={`md:flex ${isOpen ? 'flex flex-col  gap-5 absolute top-3 right-3  p-2 bg-black bg-opacity-40' : 'hidden'} md:items-center md:gap-20 mt-4 md:mt-0 `}>
-        <li className='font-bold text-xl'><Link href={"/"}>{`</Home>`}</Link></li>
-        <li className='font-bold text-xl'><Link href={"/about"}>{`</About>`}</Link></li>
+      <ul className={`md:flex ${isOpen ? 'flex flex-col  gap-5 absolute top-3 right-3 z-10  p-2 bg-black bg-opacity-40' : 'hidden'} md:items-center md:gap-20 mt-4 md:mt-0 `}>
+        <li className={`font-bold text-xl ${isOpen ? 'p-2' : ''}`}><Link href={"/"}>{`</Home>`}</Link></li>
+        <li className={`font-bold text-xl ${isOpen ? 'p-2 ' : ''}`}><Link href={"/about"}>{`</About>`}</Link></li>
       </ul>
     </div>
   );
