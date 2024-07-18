@@ -1,4 +1,6 @@
 
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 import Intro from "@/components/Intro";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -12,11 +14,16 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center  p-12">
+    
+     <main className="flex min-h-screen flex-col items-center  p-12">
       <Navbar />
       <Intro />
       <SkillsSection />
       <Projects/>
-    </main>
+      <Contact />
+      <Footer />
+      </main>
+      
+    
   );
 }

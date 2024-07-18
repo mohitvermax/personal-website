@@ -21,7 +21,7 @@ const SocialIcons = () => {
         <FaLinkedin size={25} />
       </a>
       <a
-        href='https://twitter.com/mohitvermaxx'
+        href='https://x.com/mohitvermaxx'
         target='_blank'
         rel='noopener noreferrer'
         className='bg-gray-950   hover:scale-125 text-white p-4 rounded-full hover:bg-blue-400 transition duration-300'
