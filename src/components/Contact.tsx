@@ -4,7 +4,7 @@ import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 const Contact = () => {
   return (
     <div className='flex flex-col items-center justify-center mt-16'>
-      <h2 className='text-3xl underline font-bold mb-4'>Let's Connect</h2>
+      <h2 className='text-3xl underline font-bold mb-4'>Let&apos;s Connect</h2>
       <div className='flex space-x-4 mt-8'>
         <a
           href='mailto:mohit_v@ch.iitr.ac.in'
