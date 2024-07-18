@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='p-4 w-full text-white py-4 flex justify-between items-center'>
+    <footer className='p-4 mt-8 w-full text-white flex justify-between items-center'>
       <div className='flex space-x-4'>
         <a
           href='https://x.com/mohitvermaxx'
@@ -12,7 +12,7 @@ const Footer = () => {
           className='hover:text-blue-400 transition duration-300'
           aria-label='Twitter'
         >
-          <FaTwitter size={24} />
+          <FaTwitter size={20} />
         </a>
         <a
           href='https://www.linkedin.com/in/mohit-verma2005/'
@@ -21,7 +21,7 @@ const Footer = () => {
           className='hover:text-blue-500 transition duration-300'
           aria-label='LinkedIn'
         >
-          <FaLinkedin size={24} />
+          <FaLinkedin size={20} />
         </a>
       </div>
       <div className='text-sm'>

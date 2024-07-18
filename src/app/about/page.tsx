@@ -17,10 +17,14 @@ const page = () => {
             <h1 className='text-2xl underline  font-bold mb-4'>About Me</h1>
         </div>
         <div>
+          <img src="profilepic.png" className='rounded-full h-40 w-40 m-4 hover:scale-105 transition duration-300' alt="" />
+        </div>
+        <div>
             <h1 className='text-3xl mb-4'>I am Mohit Verma, Sophomore at IITR.</h1>
         </div>
         <div>
-            <p>Crafting Digital Experiences with Passion</p>
+
+            <p>attending college during the day and building projects in night</p>
         </div>
         <div>
             <SocialIcons/>
