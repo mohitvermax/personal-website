@@ -32,7 +32,7 @@ const page = () => {
             <SocialIcons/>
         </div>
         <div className='md:w-[50vw] justify-center mx-auto border mt-6 p-4 md:p-6 rounded-lg'>
-            <p className='text-gray-100 text-sm'><a
+            <p className=' text-sm'><a
                 href='https://github.com/mohitvermax'
                 target='_blank'
                 rel='noopener noreferrer'
