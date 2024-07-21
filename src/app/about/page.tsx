@@ -14,7 +14,9 @@ const About = () => {
     gsap.from('.avatar', {scale:0, opacity: 0, duration: 0.5, delay: 1.5})
     gsap.from('.text-slide', {x:20, opacity: 0, duration: 0.5, delay: 2})
     gsap.from('.para', {x:20, opacity: 0, duration: 0.5, delay: 2.5})
-    gsap.from('.github', {rotate:360, opacity: 0, duration: 0.5, delay: 3})
+    gsap.from('.github', { opacity: 0, duration: 0.5, delay: 3})
+    gsap.from('.footer-about', { y:20 , opacity: 0, duration: 0.5, delay: 3.5})
+
 
 
   })
@@ -56,7 +58,10 @@ const About = () => {
             </ul>
         </div>
       </div>
+      <div className='footer-about w-full'>
       <Footer/>
+
+      </div>
     </main>
     
     </>

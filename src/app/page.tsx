@@ -21,7 +21,9 @@ export default function Home() {
       <SkillsSection />
       <Projects/>
       <Contact />
-      <Footer />
+      <div className='footer-home w-full'>
+        <Footer/>
+      </div>
       </main>
       
     
