@@ -43,8 +43,8 @@ const SkillsSection = () => {
 const SkillIcon = ({ Icon }: any) => {
   
   return (
-    <div className=' p-4 transition-transform duration-300 transform hover:scale-110' >
-      <Icon className='' size={50} />
+    <div className=' p-4 transition-transform duration-300 transform hover:scale-110 ' >
+      <Icon className='hover:-rotate-[360deg] transition duration-200' size={50} />
     </div>
   );
 };

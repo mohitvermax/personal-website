@@ -25,7 +25,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <ul className={`md:flex ${isOpen ? 'flex flex-col  gap-5 absolute top-3 right-3 z-10  p-2 bg-black bg-opacity-40' : 'hidden'} md:items-center md:gap-20 mt-4 md:mt-0 `}>
+      <ul className={`md:flex ${isOpen ? 'flex flex-col w-full items-center gap-5 absolute top-3 right-3 z-10  p-2 bg-black bg-opacity-80' : 'hidden'} md:items-center md:gap-20 mt-4 md:mt-0 `}>
         <li className={`font-bold text-xl ${isOpen ? 'p-2' : ''}`}><Link href={"/"}>{`</Home>`}</Link></li>
         <li className={`font-bold text-xl ${isOpen ? 'p-2 ' : ''}`}><Link href={"/about"}>{`</About>`}</Link></li>
       </ul>
