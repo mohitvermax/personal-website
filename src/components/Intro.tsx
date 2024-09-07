@@ -24,7 +24,7 @@ const Intro = () => {
   {`cout<<"I am a `}{''}
   <span className='inline-block '>
     <Typewriter
-      words={['Coder', 'MERN stack developer', 'Student at IITR', 'Music Producer']}
+      words={['Developer', 'Student at IITR', 'Music Producer']}
       loop={0} // 0 means infinite
       cursor
       cursorStyle='_'

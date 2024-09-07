@@ -9,11 +9,11 @@ import { IoArrowForwardSharp } from "react-icons/io5";
 
 
 const projectsData = [
-  { id: 1, title: 'GoogleMeet Alternative', github: 'https://github.com/GmeetAlternative/GmeetAlternative',description: 'a team hackathon project designed to revolutionize online meetings by integrating advanced features such as AI-powered summarization, transcription and WebRTC ,Sockets', image: '/gmeet.png' },
-  { id: 2, title: 'Chatting website', description: 'An online chatting website where users can chat with other users. implemented with mern stack', image: '/chatapp.png' , github:'https://github.com/mohitvermax/chat-app'},
-  { id: 3, title: 'Cinequest',url:'https://cine-quest.netlify.app/',github:'https://github.com/mohitvermax/cinequest', description: 'CineQuest is a web application developed using ReactJS and Firebase, designed to provide users with a platform similar to IMDb.', image: '/cinequest.png' },
- 
-  { id: 4, title: 'My Portfolio website', description: 'My personal portfolio website developed using NextJS and TailwindCSS', image: '/portfolio.png' , github:'https://github.com/mohitvermax/personal-website'},
+  { id: 1, title: 'Audio Seperator Project', description: 'Developed a C++ application using JUCE framework to generate real-time spectrograms and process audio with FFT techniques', image: '/fftproject.png' , github:'https://github.com/mohitvermax/AudioSeperator3000'},
+  { id: 2, title: 'GoogleMeet Alternative', github: 'https://github.com/GmeetAlternative/GmeetAlternative',description: 'a team hackathon project designed to revolutionize online meetings by integrating advanced features such as AI-powered summarization, transcription and WebRTC ,Sockets', image: '/gmeet.png' },
+  { id: 3, title: 'Chatting website', description: 'An online chatting website where users can chat with other users. implemented with mern stack', image: '/chatapp.png' , github:'https://github.com/mohitvermax/chat-app'},
+  { id: 4, title: 'Cinequest',url:'https://cine-quest.netlify.app/',github:'https://github.com/mohitvermax/cinequest', description: 'CineQuest is a web application developed using ReactJS and Firebase, designed to provide users with a platform similar to IMDb.', image: '/cinequest.png' },
+  { id: 5, title: 'My Portfolio website', description: 'My personal portfolio website developed using NextJS and TailwindCSS', image: '/portfolio.png' , github:'https://github.com/mohitvermax/personal-website'},
 ];
 
 const Projects = () => {
@@ -37,38 +37,44 @@ const Projects = () => {
     <div className='projects max-w-screen-lg mx-auto flex flex-wrap justify-center gap-12 sm:space-x-6 mt-6 '>
       {projectsData.slice(0, visibleProjects).map(project => (
         <div key={project.id} className='max-w-xs rounded overflow-hidden shadow-lg my-4 hover:scale-105 transition duration-300'>
-          <Image width={0} height={0} style={{ width: '100%', height: 'auto' }}   sizes="100vw" className='w-full' src={project.image} alt={project.title} />
-          <div className='px-6 py-4 flex flex-col'>
-            <div className='font-bold text-xl mb-2 flex items-center justify-between'>
-                {project.title}
-                <div className='flex gap-2'>
-                    {project.github && (
-                        <a href={project.github}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='  hover:scale-125 text-whiste p-1 rounded-full  transition duration-300'
-                        >
-                        <FaGithub size={20} />
-                        </a>
-                    )}
-
-                    {project.url && (
-                        <a href={project.url}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='  hover:scale-125 text-whiste p-1 rounded-full  transition duration-300'
-                    >
-                        <IoArrowForwardSharp size={20} />
-                    </a>
-                    )}
-                
-            
-                </div>
-            </div>
-            
-            <p className=' text-base'>{project.description.slice(0,70)}...</p>
-          </div>
+        <div className='relative w-full h-48'> {/* Set a fixed height for the image container */}
+          <Image
+            src={project.image}
+            alt={project.title}
+            layout="fill"
+            objectFit="cover"
+            className='w-full h-full'
+          />
         </div>
+        <div className='px-6 py-4 flex flex-col'>
+          <div className='font-bold text-xl mb-2 flex items-center justify-between'>
+            {project.title}
+            <div className='flex gap-2'>
+              {project.github && (
+                <a
+                  href={project.github}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='hover:scale-125 text-white p-1 rounded-full transition duration-300'
+                >
+                  <FaGithub size={20} />
+                </a>
+              )}
+              {project.url && (
+                <a
+                  href={project.url}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='hover:scale-125 text-white p-1 rounded-full transition duration-300'
+                >
+                  <IoArrowForwardSharp size={20} />
+                </a>
+              )}
+            </div>
+          </div>
+          <p className='text-base'>{project.description.slice(0, 70)}...</p>
+        </div>
+      </div>
       ))}
       </div>
       {visibleProjects < projectsData.length && (

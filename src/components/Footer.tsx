@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
       </div>
       <div className='text-sm'>
-        Made with <span className='text-red-500'>♥</span> by Mohit
+        Made with <span className='text-red-500'>♥</span> by emvee
       </div>
     </footer>
   );
